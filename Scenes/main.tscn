@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8g7pfol2jpy4"]
+
+[ext_resource type="PackedScene" uid="uid://bs4lkus85suhh" path="res://Scenes/ground.tscn" id="1_vageb"]
+[ext_resource type="PackedScene" uid="uid://bihy361hj7fgm" path="res://Scenes/Player.tscn" id="2_qns4f"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Ground" parent="." instance=ExtResource("1_vageb")]
+position = Vector2(0, 299)
+
+[node name="Player" parent="." instance=ExtResource("2_qns4f")]
+position = Vector2(68, 501)
+scale = Vector2(3, 3)
