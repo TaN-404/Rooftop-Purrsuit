@@ -15,5 +15,5 @@ texture = SubResource("PlaceholderTexture2D_etsr4")
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(10.0313, 5.07813)
+position = Vector2(10.0781, 5.14063)
 shape = SubResource("RectangleShape2D_cj2ce")

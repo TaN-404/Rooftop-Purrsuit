@@ -3,7 +3,7 @@ extends CharacterBody2D
 const SPEED = 700
 const JUMP_VELOCITY = -600.0
 
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var gravity = 1500
 
 func _physics_process(delta):
 	velocity.y += gravity * delta
@@ -15,9 +15,9 @@ func _physics_process(delta):
 		if velocity.x != 0:
 			$AnimatedSprite2D.play("run")
 			if Input.get_action_strength("ui_left") > 0:
-				$AnimatedSprite2D.scale.x = -2
+				$AnimatedSprite2D.scale.x = -1
 			else:
-				$AnimatedSprite2D.scale.x = 2
+				$AnimatedSprite2D.scale.x = 1
 		else:
 			$AnimatedSprite2D.play("Idle")
 	else:
